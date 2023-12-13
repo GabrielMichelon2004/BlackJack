@@ -4,8 +4,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public interface DAO {
 
-    static final Conexao conexao = new Conexao();
-    static final JdbcTemplate con = conexao.getConexao();
+    Conexao conexao = new Conexao();
+    JdbcTemplate con = conexao.getConexao();
 
 
 }
