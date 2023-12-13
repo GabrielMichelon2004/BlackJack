@@ -9,11 +9,17 @@ public class Usuario implements DAO {
 
     private String nome;
     private String sobrenome;
-    private String email = "gabriel@gmail.com";
-    private String senha = "123456";
+    private String email;
+    private String senha;
     private Integer dinheiro;
     private List<Usuario> listaDadosUsuario;
 
+
+    public Usuario(){}
+    public Usuario(String email, String senha) {
+        this.email = email;
+        this.senha = senha;
+    }
 
     public void dadosUsuario(){
         listaDadosUsuario   = con.query("SELECT * FROM usuario WHERE email = ? AND senha = ?"
@@ -21,12 +27,6 @@ public class Usuario implements DAO {
 
     }
 
-
-    public void setDadosUsuario(){
-
-
-
-    }
 
 
 

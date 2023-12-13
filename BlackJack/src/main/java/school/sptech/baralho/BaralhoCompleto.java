@@ -22,14 +22,14 @@ public class BaralhoCompleto {
 
 
     public void criandoDeck(){
-
-        for (CartaNaipe cartaDaVez: listaCarta) {
-            for (CartaNaipe naipeDaVez: listaNaipe) {
-                deck.add(cartaDaVez);
-                deck.add(naipeDaVez);
+        for (int i = 0; i < 8; i++) {
+            for (CartaNaipe cartaDaVez: listaCarta) {
+                for (CartaNaipe naipeDaVez: listaNaipe) {
+                    deck.add(cartaDaVez);
+                    deck.add(naipeDaVez);
+                }
             }
         }
-
     }
 
 
