@@ -4,7 +4,7 @@ import school.sptech.jogadores.Usuario;
 
 import java.util.Scanner;
 
-public class Login{
+public class Login {
 
     private String email;
     private String senha;

@@ -3,6 +3,7 @@ package school.sptech.jogadores;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import school.sptech.banco.DAO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario implements DAO {
@@ -12,11 +13,18 @@ public class Usuario implements DAO {
     private String email;
     private String senha;
     private Integer dinheiro;
-    private List<Usuario> listaDadosUsuario;
+    private List<Usuario> listaDadosUsuario = new ArrayList<>();
 
 
     public Usuario(){}
     public Usuario(String email, String senha) {
+        this.email = email;
+        this.senha = senha;
+    }
+
+    public Usuario(String nome, String sobrenome, String email, String senha) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
         this.email = email;
         this.senha = senha;
     }
