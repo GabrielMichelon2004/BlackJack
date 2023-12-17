@@ -18,9 +18,8 @@ public class Main {
         login.fazerLogin();
          */
 
-
-        Cadastro cadastro = new Cadastro("teste","ola","teste1@gmail.com","123");
-        cadastro.cadastrarUsuario();
+        Cadastro cadastro = new Cadastro();
+        cadastro.cadastrar();
 
 
 
